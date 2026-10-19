@@ -2,6 +2,10 @@
     padding-top: 19px;
 }
 
+.animated {
+    animation: upriseTitle 1s ease backwards;
+}
+
 .header__wrapper {
     display: flex;
     justify-content: space-between;
@@ -16,6 +20,18 @@
     background-color: transparent;
     border: none;
     display: none;
+}
+
+@keyframes upriseTitle {
+    0% {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @media (max-width: 797px) {

@@ -7,6 +7,7 @@
     color: #FAFAFA;
     cursor: pointer;
     display: block;
+    transition: scale 0.5s ease;
 }
 
 .btn--about {
@@ -24,6 +25,7 @@
 
 .btn--banner {
     width: 220px;
+    animation: upriseImg 1s 3.8s ease backwards;
 }
 
 .btn--form {
@@ -35,6 +37,10 @@
     display: flex;
     justify-content: center;
     margin-left: auto;
+}
+
+.btn:hover {
+    scale: 1.1;
 }
 
 @media (max-width: 767px) {
