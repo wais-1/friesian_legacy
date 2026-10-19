@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="#" class="header__wrapper-link">
+                    <picture>
+                        <img class="header__wrapper-logo" src="images/icon-logo-header.png"
+                            srcset="images/icon-logo-header@2x.png" alt="логотип компании" width="80" height="50">
+                    </picture>
+                </a>
+                <nav class="header__nav">
+                    <ul class="nav-list header-list">
+                        <li class="nav-list__item">
+                            <a href="#home" class="nav-list__link">Home</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#about" class="nav-list__link">About us</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#horses" class="nav-list__link">Our friesians</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#contacts" class="nav-list__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__burger">
+                    <svg width="24" height="24" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-burger"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="burger">
+                <nav class="burger__nav">
+                    <ul class="burger-list burger-list">
+                        <li class="burger-list__item">
+                            <a href="index.html" class="burger-list__link">Home</a>
+                        </li>
+                        <li class="burger-list__item">
+                            <a href="#about" class="burger-list__link">About us</a>
+                        </li>
+                        <li class="burger-list__item">
+                            <a href="#horses" class="burger-list__link">Our friesians</a>
+                        </li>
+                        <li class="burger-list__item">
+                            <a href="#contacts" class="burger-list__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <script>
+                const burger = document.querySelector('.burger')
+                const burgerBtn = document.querySelector('.header__burger')
+
+                function openMenu() {
+                    const isOpen = burger.classList.toggle('is-open')
+                }
+
+                burgerBtn.addEventListener('click', openMenu)
+
+                burger.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        burger.classList.remove('is-open')
+                    })
+                })
+
+
+            </script>
+        </div>
+    </header>
+    <main>
+        <section class="request">
+            <div class="container">
+                <h1 class="request__title">contact the seller</h1>
+                <p class="request__text">Submit a request, and we will call you back within 30 minutes during business
+                    hours.</p>
+                <div class="request__wrapper">
+                    <div class="horse-card">
+                        <picture>
+                            <img class="horse-card__img" src="images/img-sell.png" srcset="images/img-sell@2x.png"
+                                alt="фото коня на продажу" width="186" height="144">
+                        </picture>
+                        <div class="horse-card__inner">
+                            <span class="horse-card__name">Black Velvet Symphony</span>
+                            <span class="horse-card__price">20.000$</span>
+                        </div>
+                    </div>
+                    <form action="#" method="post" class="form">
+                        <div class="form__wrapper">
+                            <div class="custom-input">
+                                <label for="user-name" class="custom-input__label">Your name</label>
+                                <input type="text" id="user-name" class="custom-input__field" placeholder="Ivan">
+                            </div>
+                            <div class="custom-input">
+                                <label for="user-name" class="custom-input__label">Your phone number</label>
+                                <input type="text" id="user-name" class="custom-input__field"
+                                    placeholder="+7 (XXX) XXX XX XX">
+                            </div>
+                            <div class="custom-input">
+                                <label for="user-name" class="custom-input__label">Your email</label>
+                                <input type="text" id="user-name" class="custom-input__field"
+                                    placeholder="email@mail.ru">
+                            </div>
+                            <div class="custom-input">
+                                <label for="user-name" class="custom-input__label">Your comment</label>
+                                <textarea type="text" id="user-name" class="custom-input__field textarea"
+                                    placeholder="Write your comment"></textarea>
+                            </div>
+                            <button class="btn btn--form" type="submit">send the request</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer black">
+        <div class="container">
+            <div class="footer__wrapper">
+                <a href="#" class="footer__wrapper-link">
+                    <picture>
+                        <img class="footer__wrapper-logo" src="images/icon-logo-footer.png"
+                            srcset="images/icon-logo-footer@2x.png" alt="логотип компании" width="216" height="50">
+                    </picture>
+                </a>
+                <nav class="footer__nav">
+                    <ul class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="#home" class="nav-list__link">Home</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#about" class="nav-list__link">About us</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#horses" class="nav-list__link">Our friesians</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#contacts" class="nav-list__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

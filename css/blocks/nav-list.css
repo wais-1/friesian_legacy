@@ -1,0 +1,19 @@
+.nav-list {
+    display: flex;
+    gap: 25px;
+    font-size: 14px;
+}
+
+.white {
+    color: #FAFAFA;
+}
+
+@media (max-width: 797px) {
+    .header-list {
+        display: none;
+    }
+
+    .nav-list {
+        gap: 20px;
+    }
+}

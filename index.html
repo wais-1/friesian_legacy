@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>friesian legacy</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="#" class="header__wrapper-link">
+                    <picture>
+                        <img class="header__wrapper-logo" src="images/icon-logo-header.png"
+                            srcset="images/icon-logo-header@2x.png" alt="логотип компании" width="80" height="50">
+                    </picture>
+                </a>
+                <nav class="header__nav">
+                    <ul class="nav-list header-list">
+                        <li class="nav-list__item">
+                            <a href="#home" class="nav-list__link">Home</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#about" class="nav-list__link">About us</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#horses" class="nav-list__link">Our friesians</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#contacts" class="nav-list__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__burger">
+                    <svg width="24" height="24" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-burger"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="burger">
+                <nav class="burger__nav">
+                    <ul class="burger-list burger-list">
+                        <li class="burger-list__item">
+                            <a href="#home" class="burger-list__link">Home</a>
+                        </li>
+                        <li class="burger-list__item">
+                            <a href="#about" class="burger-list__link">About us</a>
+                        </li>
+                        <li class="burger-list__item">
+                            <a href="#horses" class="burger-list__link">Our friesians</a>
+                        </li>
+                        <li class="burger-list__item">
+                            <a href="#contacts" class="burger-list__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <script>
+                const burger = document.querySelector('.burger')
+                const burgerBtn = document.querySelector('.header__burger')
+
+                function openMenu() {
+                    const isOpen = burger.classList.toggle('is-open')
+                }
+
+                burgerBtn.addEventListener('click', openMenu)
+
+                burger.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        burger.classList.remove('is-open')
+                    })
+                })
+
+
+            </script>
+        </div>
+    </header>
+    <main>
+        <section class="banner" id="home">
+            <div class="container">
+                <div class="banner__wrapper">
+                    <h1 class="banner__title">Friesian Legacy</h1>
+                    <span class="banner__note">Where centuries of nobility meet the modern spirit.</span>
+                    <div class="banner__inner">
+                        <span class="banner__text right">Born from the misty lowlands of the Netherlands, our Friesians
+                            carry
+                            the fire of centuries in their blood. Each step is a dance,</span>
+                        <span class="banner__text left">each glance is poetry. Step into a world where every horse tells
+                            a
+                            story
+                            of nobility, power, and untamed beauty.</span>
+                    </div>
+                    <picture>
+                        <img class="banner__img" src="images/img-banner.png" srcset="images/img-banner@2x.png"
+                            alt="фото фризского коня" width="795" height="712">
+                    </picture>
+                    <a class="btn btn--banner" href="form.html">submit a request</a>
+                    <picture>
+                        <img class="banner__img-mob" src="images/img-banner-mob.png" srcset="images/img-banner-mob@2x.png"
+                            alt="фото фризского коня" width="320" height="381">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__wrapper">
+                    <h2 class="about__title">ABOUT US</h2>
+                    <p class="about__descr">We don't just sell horses; <span class="about__bold">we match souls</span>.
+                        Whether you are looking for a
+                        majestic dressage partner, a show-stopping carriage horse, or a loyal friend, we ensure the
+                        Friesian spirit aligns with your dreams.</p>
+                    <span class="about__note">Health, pedigree are our pillars.</span>
+                    <span class="about__text">All our Friesians come with full European registration, veterinary
+                        clearance, and a lifetime of our support.</span>
+                    <picture>
+                        <img class="about__img" src="images/img-about.png" srcset="images/img-about@2x.png"
+                            alt="фото фризского коня" width="1145" height="764">
+                    </picture>
+                    <a class="btn btn--about" href="#horses">view more
+                        <svg width="39" height="8" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="horses" id="horses">
+            <div class="container">
+                <h2 class="horses__title">OUR FRIESIANS</h2>
+                <p class="horses__descr">We are dedicated to breeding elite Friesian horses that combine the
+                    striking presence of classical baroque beauty with a gentle, willing temperament. Every horse in
+                    our stable is a living work of art, raised with passion and the highest standards of care.</p>
+                <div class="horses__wrapper">
+                    <div class="horses-card">
+                        <picture>
+                            <img class="horses-card__img" src="images/img-card-1.png" srcset="images/img-card-1@2x.png"
+                                alt="фото фризского коня" width="402" height="416">
+                        </picture>
+                        <span class="horses-card__name">Black Velvet Symphony</span>
+                        <a href="card.html" class="btn btn--card">know more</a>
+                        <span class="horses-card__year">2022</span>
+                    </div>
+                    <div class="horses-card top">
+                        <picture>
+                            <img class="horses-card__img" src="images/img-card-2.png" srcset="images/img-card-2@2x.png"
+                                alt="фото фризского коня" width="402" height="416">
+                        </picture>
+                        <span class="horses-card__name">Midnight Thunderstorm</span>
+                        <a href="card.html" class="btn btn--card">know more</a>
+                        <span class="horses-card__year year-top">2020</span>
+                    </div>
+                    <div class="horses-card">
+                        <picture>
+                            <img class="horses-card__img" src="images/img-card-3.png" srcset="images/img-card-3@2x.png"
+                                alt="фото фризского коня" width="402" height="416">
+                        </picture>
+                        <span class="horses-card__name">Shadow of the Monarch</span>
+                        <a href="card.html" class="btn btn--card">know more</a>
+                        <span class="horses-card__year">2020</span>
+                    </div>
+                    <div class="horses-card top">
+                        <picture>
+                            <img class="horses-card__img" src="images/img-card-4.png" srcset="images/img-card-4@2x.png"
+                                alt="фото фризского коня" width="402" height="416">
+                        </picture>
+                        <span class="horses-card__name">Midnight Thunderstorm</span>
+                        <a href="card.html" class="btn btn--card">know more</a>
+                        <span class="horses-card__year year-top">2020</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <h2 class="contacts__title">where we are</h2>
+                <p class="contacts__descr">We look forward to seeing you at the stable. Visits are by appointment only.
+                </p>
+                <div class="contacts__wrapper">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A44cd1c56b7f0adbff672a43c17559b60285f4eb5c00661765a7f52f379094443&amp;source=constructor"
+                        width="533" height="385" frameborder="0"
+                        class="contacts__card"></iframe>
+                    <ul class="contacts-list">
+                        <li class="contacts-list__item">
+                            <svg width="25" height="25" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-location"></use>
+                            </svg>
+                            <span class="contacts-list__name">Address:</span>
+                            <span class="contacts-list__text">Moscow, Balaklavsky Prospekt, 28</span>
+                        </li>
+                        <li class="contacts-list__item">
+                            <svg width="19" height="19" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-phone"></use>
+                            </svg>
+                            <span class="contacts-list__name">phone number:</span>
+                            <a href="tel:+74951234567" class="contacts-list__text">+7 (495) 123-45-67</a>
+                        </li>
+                        <li class="contacts-list__item">
+                            <svg width="19" height="19" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-email"></use>
+                            </svg>
+                            <span class="contacts-list__name">EMAIL:</span>
+                            <a href="tel:friesians@mail.ru" class="contacts-list__text">friesians@mail.ru</a>
+                        </li>
+                        <li class="contacts-list__item">
+                            <svg width="19" height="19" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#icon-clock"></use>
+                            </svg>
+                            <span class="contacts-list__name">OPENING HOURS:</span>
+                            <span class="contacts-list__text">ежедневно 9:00–19:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <a href="#" class="footer__wrapper-link">
+                    <picture>
+                        <img class="footer__wrapper-logo" src="images/icon-logo-footer.png"
+                            srcset="images/icon-logo-footer@2x.png" alt="логотип компании" width="216" height="50">
+                    </picture>
+                </a>
+                <nav class="footer__nav">
+                    <ul class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="#home" class="nav-list__link white">Home</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#about" class="nav-list__link white">About us</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#horses" class="nav-list__link white">Our friesians</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#contacts" class="nav-list__link white">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

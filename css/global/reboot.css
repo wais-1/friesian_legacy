@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font-family: "Montserrat", "Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: #1D1D1D;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+main {
+    flex: 1 0 auto; /* Растягивается и заполняет всё пустое пространство */
+}
+
+footer {
+    flex-shrink: 0; /* Гарантирует, что подвал не сожмется */
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #1D1D1D;
+}
+
+h2 {
+    margin: 0 0 32px;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: normal;
+}

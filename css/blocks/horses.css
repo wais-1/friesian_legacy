@@ -1,0 +1,114 @@
+.horses {
+    background-color: #1D1D1D;
+    padding-top: 88px;
+    /* height: 100vh; */
+    position: relative;
+    padding-bottom: 107px;
+}
+
+.horses::before {
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: #FAFAFA;
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+
+.horses::after {
+    content: "";
+    height: 16px;
+    width: 16px;
+    background-color: #FAFAFA;
+    position: absolute;
+    top: 100px;
+    left: 4.5%;
+    border-radius: 50px;
+}
+
+.horses__title {
+    color: #FAFAFA;
+    margin: 0 0 11px;
+}
+
+.horses__descr {
+    color: #FAFAFA;
+    font-size: 14px;
+    width: 725px;
+    font-weight: normal;
+    margin: 0 0 32px;
+}
+
+.horses__wrapper {
+    display: flex;
+    column-gap: 238px;
+    row-gap: 69px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.horses-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    width: 402px;
+}
+
+.horses-card__name {
+    color: #FAFAFA;
+    font-size: 18px;
+}
+
+.horses-card__year {
+    font-family: "Caramel", "Arial", sans-serif;
+    color: #C9A96E;
+    font-size: 96px;
+    position: absolute;
+    bottom: 56px;
+    right: -24px;
+}
+
+.top {
+    flex-direction: column-reverse;
+}
+
+.year-top {
+    top: 29px;
+    bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .horses-card__img {
+        width: 100%;
+        height: auto;
+    }
+
+    .horses__wrapper {
+        padding: 0 15px;
+    }
+
+    .horses-card__year {
+        font-size: 70px;
+        bottom: 85px;
+        right: -8px;
+    }
+
+    .year-top {
+        top: unset;
+    }
+
+    .horses__title {
+        padding: 0 20px;
+    }
+
+    .horses__descr {
+        padding: 0 20px;
+        width: 300px;
+    }
+
+    .horses::after {
+        left: 11px;
+    }
+}

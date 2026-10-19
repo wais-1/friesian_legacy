@@ -1,0 +1,17 @@
+@import '../css/global/reboot.css';
+@import '../css/global/fonts.css';
+@import '../css/global/container.css';
+
+@import '../css/blocks/header.css';
+@import '../css/blocks/footer.css';
+@import '../css/blocks/nav-list.css';
+@import '../css/blocks/banner.css';
+@import '../css/blocks/btn.css';
+@import '../css/blocks/about.css';
+@import '../css/blocks/horses.css';
+@import '../css/blocks/contacts.css';
+@import '../css/blocks/request.css';
+@import '../css/blocks/card.css';
+@import '../css/blocks/burger.css';
+@import '../css/blocks/horse-card.css';
+@import '../css/blocks/custom-input.css';

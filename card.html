@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Horse Card</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="#" class="header__wrapper-link">
+                    <picture>
+                        <img class="header__wrapper-logo" src="images/icon-logo-header.png"
+                            srcset="images/icon-logo-header@2x.png" alt="логотип компании" width="80" height="50">
+                    </picture>
+                </a>
+                <nav class="header__nav">
+                    <ul class="nav-list header-list">
+                        <li class="nav-list__item">
+                            <a href="#home" class="nav-list__link">Home</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#about" class="nav-list__link">About us</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#horses" class="nav-list__link">Our friesians</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#contacts" class="nav-list__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__burger">
+                    <svg width="24" height="24" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-burger"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="burger">
+                <nav class="burger__nav">
+                    <ul class="burger-list burger-list">
+                        <li class="burger-list__item">
+                            <a href="index.html" class="burger-list__link">Home</a>
+                        </li>
+                        <li class="burger-list__item">
+                            <a href="#about" class="burger-list__link">About us</a>
+                        </li>
+                        <li class="burger-list__item">
+                            <a href="#horses" class="burger-list__link">Our friesians</a>
+                        </li>
+                        <li class="burger-list__item">
+                            <a href="#contacts" class="burger-list__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <script>
+                const burger = document.querySelector('.burger')
+                const burgerBtn = document.querySelector('.header__burger')
+
+                function openMenu() {
+                    const isOpen = burger.classList.toggle('is-open')
+                }
+
+                burgerBtn.addEventListener('click', openMenu)
+
+                burger.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        burger.classList.remove('is-open')
+                    })
+                })
+
+
+            </script>
+        </div>
+    </header>
+    <main>
+        <section class="card">
+            <div class="container">
+                <div class="card__wrapper">
+                    <div class="card__main">
+                        <picture>
+                            <img src="images/img-sell.png" srcset="images/img-sell@2x.png" alt="фотография фриза"
+                                class="card__img" width="708" height="549">
+                        </picture>
+                        <p class="card__note">Black Velvet Symphony - a young stallion with a bright, active trot
+                            and a lively temperament. He is eager to learn, enjoys working, and quickly forms a bond
+                            with people. An excellent choice for those looking to develop a partner for dressage.</p>
+                    </div>
+                    <div class="card__inner">
+                        <h2 class="card__name">Black Velvet Symphony</h2>
+                        <span class="card__price">20.000$</span>
+                        <div class="card__date">
+                            <span class="card__text">Date birth:</span>
+                            <span class="card__text">08/25/2022</span>
+                        </div>
+                        <div class="card__descr">
+                            <div class="card__feature">
+                                <span class="card__text">Sex:</span>
+                                <span class="card__text">stallion</span>
+                            </div>
+                            <div class="card__feature">
+                                <span class="card__text">Suit:</span>
+                                <span class="card__text">mare</span>
+                            </div>
+                            <div class="card__feature">
+                                <span class="card__text">Height at the withers:</span>
+                                <span class="card__text">178sm</span>
+                            </div>
+                            <div class="card__feature">
+                                <span class="card__text">Breed:</span>
+                                <span class="card__text">Friesian (KFPS)</span>
+                            </div>
+                            <div class="card__feature">
+                                <span class="card__text">Father / mother:</span>
+                                <span class="card__text">Tjerk 454 / Anneleyn 7</span>
+                            </div>
+                            <div class="card__feature">
+                                <span class="card__text">Character:</span>
+                                <span class="card__text">Curious, energetic</span>
+                            </div>
+                            <div class="card__feature">
+                                <span class="card__text">Specialization:</span>
+                                <span class="card__text">Dressage, pleasure riding</span>
+                            </div>
+                            <div class="card__feature">
+                                <span class="card__text">Health:</span>
+                                <span class="card__text big">Veterinary certificate, microchip,
+                                    vaccinations, PCR tests, walks</span>
+                            </div>
+                            <div class="card__feature">
+                                <span class="card__text">Documents:</span>
+                                <span class="card__text big">KFPS passport, contract,
+                                    veterinary passport</span>
+                            </div>
+                            <div class="card__feature">
+                                <span class="card__text">Maintenance:</span>
+                                <span class="card__text">Daybed and walking area</span>
+                            </div>
+                            <div class="card__feature">
+                                <span class="card__text">Delivery:</span>
+                                <span class="card__text">All over the world</span>
+                            </div>
+                        </div>
+                        <a href="form.html" class="btn btn--card">contact the seller</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <a href="#" class="footer__wrapper-link">
+                    <picture>
+                        <img class="footer__wrapper-logo" src="images/icon-logo-footer.png"
+                            srcset="images/icon-logo-footer@2x.png" alt="логотип компании" width="216" height="50">
+                    </picture>
+                </a>
+                <nav class="footer__nav">
+                    <ul class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="#home" class="nav-list__link white">Home</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#about" class="nav-list__link white">About us</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#horses" class="nav-list__link white">Our friesians</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="#contacts" class="nav-list__link white">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

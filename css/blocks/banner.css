@@ -1,0 +1,136 @@
+.banner__wrapper {
+    position: relative;
+    height: calc(100vh - 73px);
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(
+        to bottom,
+        rgba(144, 144, 144, 0) 59%,
+        rgba(0, 0, 0, 0.7) 100%
+    );
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.banner__title {
+    font-family: "Cinzel", "Times New Roman", serif;
+    font-size: 128px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    font-weight: normal;
+}
+
+.banner__note {
+    font-size: 14px;
+    width: 348px;
+    display: block;
+    text-align: right;
+    margin-left: auto;
+}
+
+.banner__inner {
+    width: 395px;
+    position: relative;
+    padding-top: 170px;
+    padding-left: 60px;
+    margin-bottom: 150px;
+}
+
+.banner__text {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    width: 276px;
+}
+
+.left {
+    text-align: right;
+    width: 236px;
+    margin-left: auto;
+    position: absolute;
+    top: 94.5%;
+    right: -8%;
+}
+
+.banner__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: 90%;
+}
+
+.banner__img-mob {
+    display: none;
+}
+
+@media (max-width: 1032px) {
+    .banner__title {
+        font-size: 70px;
+    }
+
+    .banner__inner {
+        padding-top: 70px;
+        margin-bottom: 67px;
+        padding-left: 0;
+    }
+
+    .banner__img {
+        width: 500px;
+        height: 448px;
+    }
+
+    .left {
+        top: 89.5%;
+        right: 7%;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner__title {
+        font-size: 50px;
+    }
+
+    .banner__note {
+        text-align: center;
+        width: 200px;
+        margin: 0 auto;
+        font-size: 12px;    
+    }
+
+    .left {
+        position: unset;
+        margin: 0;
+        text-align: left;
+    }
+
+    .banner__inner {
+        display: none;
+    }
+
+    .banner__img {
+        display: none;
+    }
+
+    .banner__img-mob {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        z-index: -2;
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,45 @@
+.btn {
+    border: none;
+    background-color: #C9A96E;
+    padding: 20px 28px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #FAFAFA;
+    cursor: pointer;
+    display: block;
+}
+
+.btn--about {
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    position: relative;
+}
+
+.btn--card {
+    width: 170px;
+}
+
+.btn--banner {
+    width: 220px;
+}
+
+.btn--form {
+    margin-left: auto;
+}
+
+.btn--card {
+    width: 245px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+}
+
+@media (max-width: 767px) {
+    .btn--banner {
+        margin-top: auto;
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,26 @@
+.header {
+    padding-top: 19px;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dark {
+    background-color: #1D1D1D;
+}
+
+.header__burger {
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+@media (max-width: 797px) {
+    .header__burger {
+        display: block;
+        cursor: pointer;
+    }
+}
